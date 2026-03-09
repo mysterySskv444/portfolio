@@ -1,0 +1,18 @@
+{
+  "name": "sharma-sujeet-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.2",
+    "gh-pages": "^6.3.0"
+  }
+}

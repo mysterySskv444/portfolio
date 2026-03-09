@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharma Sujeet | Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Modern developer portfolio of Sharma Sujeet featuring projects, skills, experience, and contact information."
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <meta property="og:title" content="Sharma Sujeet | Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Developer / Tech Enthusiast portfolio website built with HTML, CSS, and TypeScript."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="bg-animation" aria-hidden="true"></div>
+
+    <header class="header glass" id="top">
+      <nav class="nav container">
+        <a href="#top" class="brand">SS</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container section reveal">
+        <p class="eyebrow">Hello, I am</p>
+        <h1>Sharma Sujeet</h1>
+        <h2>Developer / Tech Enthusiast</h2>
+        <p class="typing-wrap">I build <span id="typingText" class="typing"></span></p>
+        <div class="cta-wrap">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Let&apos;s Connect</a>
+        </div>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <h3>About Me</h3>
+        <div class="about-grid">
+          <img src="assets/images/profile-placeholder.svg" alt="Profile placeholder" class="profile" loading="lazy" />
+          <div>
+            <p>
+              I am a passionate developer focused on building scalable web and mobile experiences with elegant user interfaces and clean engineering practices.
+            </p>
+            <div class="timeline">
+              <article class="timeline-item"><span>2021</span>Started software development journey.</article>
+              <article class="timeline-item"><span>2022</span>Built Android and Java-based utility apps.</article>
+              <article class="timeline-item"><span>2023</span>Moved into full-stack web development.</article>
+              <article class="timeline-item"><span>2024</span>Focused on modern TypeScript and performance optimization.</article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="container section reveal">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <article class="card">Java</article>
+          <article class="card">TypeScript</article>
+          <article class="card">Web Development</article>
+          <article class="card">Android Development</article>
+          <article class="card">Database</article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section reveal">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+          <article class="project-card glass">
+            <img src="assets/images/project-attendance.svg" alt="Attendance App" loading="lazy" />
+            <h4>Attendance App</h4>
+            <p>Track attendance with analytics, reports, and role-based controls.</p>
+            <small>Java, Spring Boot, PostgreSQL</small>
+            <div class="card-actions"><a href="#" aria-label="Attendance App GitHub">GitHub</a><a href="#">Live Demo</a></div>
+          </article>
+          <article class="project-card glass">
+            <img src="assets/images/project-fullstack.svg" alt="Full Stack Web App" loading="lazy" />
+            <h4>Full Stack Web App</h4>
+            <p>Production-grade app with secure auth and responsive dashboards.</p>
+            <small>TypeScript, Node.js, MongoDB</small>
+            <div class="card-actions"><a href="#" aria-label="Full Stack Web App GitHub">GitHub</a><a href="#">Live Demo</a></div>
+          </article>
+          <article class="project-card glass">
+            <img src="assets/images/project-calculator.svg" alt="Android Calculator App" loading="lazy" />
+            <h4>Android Calculator App</h4>
+            <p>Fast and intuitive calculator app with modern Android UI patterns.</p>
+            <small>Kotlin, Android SDK</small>
+            <div class="card-actions"><a href="#" aria-label="Calculator App GitHub">GitHub</a><a href="#">Live Demo</a></div>
+          </article>
+          <article class="project-card glass">
+            <img src="assets/images/project-portfolio.svg" alt="Portfolio Website" loading="lazy" />
+            <h4>Portfolio Website</h4>
+            <p>Minimal and performant personal website with creative animations.</p>
+            <small>HTML, CSS, TypeScript</small>
+            <div class="card-actions"><a href="#" aria-label="Portfolio Website GitHub">GitHub</a><a href="#">Live Demo</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="container section reveal">
+        <h3>Experience</h3>
+        <div class="experience-grid">
+          <article class="card glass">Software Developer Intern - Company Placeholder</article>
+          <article class="card glass">Freelance Web Developer - Client Projects</article>
+          <article class="card glass">Open Source Contributor - Community Projects</article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section reveal">
+        <h3>Contact</h3>
+        <form class="contact-form glass">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Sharma Sujeet</p>
+      <div class="socials">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
